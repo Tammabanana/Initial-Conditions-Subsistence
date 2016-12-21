@@ -1,4 +1,4 @@
-# Initial-Conditions-Subsistence
+# Initial Conditions #1: Subsistence
 
 Who needs winter clothes and food preservation - the first thing you do when you're stranded in the wilderness is set up a research station and stick your head in those papers and calculations, amirite?
 	
