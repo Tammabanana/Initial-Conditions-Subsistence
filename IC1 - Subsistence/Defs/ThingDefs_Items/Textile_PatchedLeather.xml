@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>PatchedLeather</defName>
+    <label>patched leather</label>
+    <description>Scraps of leather patched together into a more usable shape and size.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Cloth</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(175,115,30)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>1.5</MarketValue>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>4</DeteriorationRate>
+    </statBases>
+    <stuffProps>
+      <categories>
+        <li>Leathery</li>
+      </categories>
+      <color>(175,115,30)</color>
+      <commonality>1.4</commonality>
+    </stuffProps>
+    <thingCategories>
+      <li>Leathers</li>
+    </thingCategories>
+  </ThingDef>
+  
+</Defs>

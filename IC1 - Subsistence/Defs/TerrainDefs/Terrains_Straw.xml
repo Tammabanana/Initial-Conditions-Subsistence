@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <TerrainDef Name="FloorStraw">
+    <defName>FloorStraw</defName>
+		<Label>straw floor</Label>
+  	<Description>Simple flooring made with dried haygrass.</Description>
+		<texturePath>Terrain/Surfaces/StrawFloor</texturePath>
+    <EdgeType>FadeRough</EdgeType>
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>75</WorkToBuild>
+    </statBases>
+    <CostList>
+      <Hay>4</Hay>
+    </CostList>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+	  <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+
+</TerrainDefs>

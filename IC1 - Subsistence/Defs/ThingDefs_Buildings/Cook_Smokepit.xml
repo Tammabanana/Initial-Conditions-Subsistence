@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  
+<ThingDef ParentName="BuildingBase">
+    <defName>Smokepit</defName>
+    <label>smokepit</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>Dries and smokes meats. Burns out after a few days. Refuelable. Does not produce much heat.</description>    
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Building/Misc/Campfire</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <constructEffect>ConstructDirt</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.25</fillPercent>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <WoodLog>10</WoodLog>
+    </costList>
+    <soundImpactDefault>BulletImpactGround</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.0</fuelConsumptionRate>
+        <fuelCapacity>10.0</fuelCapacity>
+        <fuelConsumptionPerTickInRain>0.006</fuelConsumptionPerTickInRain>
+        <fuelFilter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </fuelFilter>
+        <destroyOnNoFuel>false</destroyOnNoFuel>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>5</heatPerSecond>
+        <heatPushMaxTemperature>5</heatPushMaxTemperature>
+      </li>
+      <li Class="CompProperties_FireOverlay">
+        <fireSize>0.25</fireSize>
+      </li>
+    </comps>
+    <designationCategory>Production</designationCategory>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <recipes>
+      <li>Tam_SmokeMeat40</li>
+	  <li>Tam_SmokeMeat10</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <isMealSource>true</isMealSource>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+  </ThingDef>
+  
+
+  </Defs>

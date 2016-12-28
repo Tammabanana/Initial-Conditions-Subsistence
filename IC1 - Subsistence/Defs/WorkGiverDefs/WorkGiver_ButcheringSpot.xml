@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+  
+    <WorkGiverDef>
+    <defName>DoBillsButcherFleshAtButcheringSpot</defName>
+    <label>butcher creatures</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Cooking</workType>
+    <priorityInType>90</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ButcheringSpot</li>
+    </fixedBillGiverDefs>
+    <verb>butcher</verb>
+    <gerund>butchering at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+  
+
+</WorkGivers>

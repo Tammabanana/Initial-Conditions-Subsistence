@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+
+	<RecipeDef>
+		<defName>MakePatchedLeather</defName>
+		<label>patch leathers together</label>
+		<description>Patch leftover scraps of leather together into a more usable shape and size.</description>
+		<jobString>patching leather scraps together.</jobString>
+		<workAmount>800</workAmount>
+		<workSpeedStat>TailoringSpeed</workSpeedStat>
+		<effectWorking>Tailor</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+	    <allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+		  			<categories>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Leathers</li>
+			</categories>
+			<exceptedThingDefs>
+				<li>PatchedLeather</li>
+			</exceptedThingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PatchedLeather>10</PatchedLeather>
+		</products>
+		<workSkill>Crafting</workSkill>
+				<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>4</minLevel>
+			</li>
+		</skillRequirements>
+	 <recipeUsers>
+        <li>CraftingSpot</li>
+		<li>ElectricTailoringBench</li>
+		<li>HandTailoringBench</li>
+      </recipeUsers>
+	</RecipeDef>
+	
+</RecipeDefs>

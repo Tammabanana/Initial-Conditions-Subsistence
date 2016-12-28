@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+ 
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>SmokeHouse</defName>
+    <label>smokehouse</label>
+    <ThingClass>Building_WorkTable_HeatPush</ThingClass>
+    <Description>An enclosed wooden structure used to preserve meat by smoking it. A stone floor prevents the whole thing from catching on fire; steel hooks and racks arrange the meat to best effect.</Description>
+    <graphicData>
+      <texPath>Production/smoker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+	
+    <CostList>
+      <WoodLog>90</WoodLog>
+	  <Steel>40</Steel>
+    </CostList>	
+	<stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+	
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>1</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>4000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(3,3)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>Impassable</Passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+<!--    <surfaceType>None</surfaceType> "None" is not used in A16 vanilla. What happens without it? -->
+    <recipes>
+	  <li>Tam_SmokeMeat150</li>
+      <li>Tam_SmokeMeat75</li>
+	  <li>Tam_SmokeMeat40</li>
+	  <li>Tam_SmokeMeat10</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+	<comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>2.0</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelConsumptionPerTickInRain>0.006</fuelConsumptionPerTickInRain>
+        <fuelFilter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </fuelFilter>
+        <destroyOnNoFuel>false</destroyOnNoFuel>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>2</heatPerSecond>
+        <heatPushMaxTemperature>2</heatPushMaxTemperature>
+      </li>
+    </comps>
+    <building>
+      <isMealSource>true</isMealSource>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <heatPerTickWhileWorking>0.25</heatPerTickWhileWorking>
+    </building>
+  </ThingDef>
+  
+</ThingDefs>

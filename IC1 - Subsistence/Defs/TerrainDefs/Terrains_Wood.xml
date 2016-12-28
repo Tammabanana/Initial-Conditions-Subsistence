@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <TerrainDef Name="FloorBaseWood" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+	  <constructEffect>ConstructWood</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+  
+  
+	<TerrainDef ParentName="FloorBaseWood">
+		<defName>FloorWood3</defName>
+		<Label>light wood floor</Label>
+		<RenderPrecedence>248</RenderPrecedence>
+		<Description>Light-coloured wooden floorboards.</Description>
+		<texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+		<statBases>
+			<WorkToBuild>170</WorkToBuild>
+			<Beauty>3</Beauty>
+		</statBases>
+		<CostList>
+			<WoodLog>6</WoodLog>
+		</CostList>
+	</TerrainDef>
+	
+
+	<TerrainDef ParentName="FloorBaseWood">
+		<defName>FloorWood6</defName>
+		<Label>barn board floor</Label>
+		<RenderPrecedence>245</RenderPrecedence>
+		<Description>Rough barn board flooring.</Description>
+		<texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+		<statBases>
+			<WorkToBuild>85</WorkToBuild>
+		</statBases>
+	    <CostList>
+			<WoodLog>2</WoodLog>
+		</CostList>
+	</TerrainDef>
+
+</TerrainDefs>
