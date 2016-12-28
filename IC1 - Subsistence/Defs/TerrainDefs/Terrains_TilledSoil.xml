@@ -25,7 +25,7 @@
 		<layerable>true</layerable>
 		<statBases>
 			<Beauty>0</Beauty>
-			<WorkToBuild>85</WorkToBuild>
+			<WorkToBuild>850</WorkToBuild>
 		</statBases>
 		<Fertility>1.2</Fertility>
 		<avoidWander>true</avoidWander>
