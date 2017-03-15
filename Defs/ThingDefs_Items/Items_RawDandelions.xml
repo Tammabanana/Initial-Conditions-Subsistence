@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+    <defName>RawDandelions</defName>
+    <label>dandelions</label>
+    <description>Dandelion greens and flowers. Edible even raw, but not very filling.</description>
+    <graphicData>
+      <texPath>Plants/DandelionHarvest</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.1</MarketValue>
+	  <Mass>0.015</Mass> <!-- Cut in half from OrganicProductBase. Leafy greens are lightweight. -->
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>3</daysToRotStart> <!-- Make this the same as meat - greens don't store well -->
+      </li>
+    </comps>
+    <ingestible>
+      <preferability>RawTasty</preferability>
+	  <nutrition>0.025</nutrition> <!-- Cut in half from other foods; leafy greens are not filling. Pawns will need to eat more of them to be satisfied. -->
+      <foodType>VegetableOrFruit</foodType>
+		<tasteThought></tasteThought> <!-- Berries have this tag. I assume it removes the AteRawFood thought out of the OrganicProductBase.-->
+    </ingestible>
+  </ThingDef>
+
+
+
+</Defs>

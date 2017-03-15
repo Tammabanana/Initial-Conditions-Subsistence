@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+	<!-- =====Coats===== -->
+
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_FSFurCoat</defName>
+		<description>A savagely warm fur coat for the savage fashion fan! 
+Wraps the important bits and bobs in dead animal hide and fur, and keeps them safe from freezing winter temperatures. 
+The preferred winter look of the tribals of the Rim!
+
+(Since dead animal fur is heavy to shlep around all day, walking and working too fast is not recommended/possible. --fashionRIMsta, Dept. of Design)
+		</description>
+		<label>fur coat</label>
+		<graphicData>
+			<texPath>Apparel/Coats/FSFurCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>150</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.8</Mass>
+			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+			<Insulation_Cold>-47</Insulation_Cold>
+			<Insulation_Heat>-4</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+			<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<worngraphicPath>Apparel/Coats/FSFurCoat</worngraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<commonality>1</commonality>
+			<tags>
+				<li>Outlander</li>
+				<li>Tribal</li>
+				<li>NorbalSage</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_Parka</defName>
+		<label>parka</label>
+		<description>A thick parka for staying warm in even the coldest of temperatures.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/Parka/Parka</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>120</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>140</MaxHitPoints>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>3.8</Mass>
+			<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.03</ArmorRating_Heat>
+			<Insulation_Cold>-40</Insulation_Cold>
+			<Insulation_Heat>-3</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.05</MoveSpeed>
+			<WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<worngraphicPath>Things/Pawn/Humanlike/Apparel/Parka/Parka</worngraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<commonality>1</commonality>
+			<tags>
+				<li>Outlander</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>RGBA(0.4,0.3,0.15,1)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<min>RGBA(0.3,0.3,0.3,1)</min>
+					<max>RGBA(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>RGBA(0.5,0.5,0.5,1)</min>
+					<max>RGBA(1,1,1,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+
+
+	<!-- =====Hats===== -->
+
+
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>Apparel_FSFurHat</defName>
+		<label>fur hat</label>
+		<description>These hats made of fur, are a replica of those worn by the ancient warriors of the Ra-Shain plains of Terra.
+They are the perfect headgear for cold weather protection, both stylish and practical.
+		</description>
+		<graphicData>
+			<texPath>Apparel/Hats/FSFurHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.07</Mass>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+			<Insulation_Cold>-12</Insulation_Cold>
+			<Insulation_Heat>-3</Insulation_Heat>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<worngraphicPath>Apparel/Hats/FSFurHat</worngraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<commonality>0.1</commonality>
+			<tags>
+				<li>Outlander</li>
+				<li>NorbalSage</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+
+</ThingDefs>

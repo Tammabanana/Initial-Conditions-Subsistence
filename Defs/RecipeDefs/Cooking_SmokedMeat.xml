@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+ <Defs>
+
+ <RecipeDef>
+    <defName>Tam_SmokeMeat150</defName>
+    <label>smoke meat (150)</label>
+    <description>Smoke meat to preserve it. Tasty, but hard to chew. It lasts a long time without refrigeration. It takes just as long to smoke a lot of meat as it does to smoke a little, but with this much meat, it takes some skill to make sure it will all get smoked evenly.</description>
+    <jobString>Smoking meat.</jobString>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>7.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Tam_SmokedMeat>150</Tam_SmokedMeat>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+	  	<exceptedThingDefs>
+			<li>Tam_SmokedMeat</li>
+		</exceptedThingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<skillRequirements>
+		<li>
+			<skill>Cooking</skill>
+			<minLevel>6</minLevel>
+		</li>
+	</skillRequirements>
+  </RecipeDef> 
+ 
+ <RecipeDef>
+    <defName>Tam_SmokeMeat75</defName>
+    <label>smoke meat (75)</label>
+    <description>Smoke meat to preserve it. Tasty, but hard to chew. It lasts a long time without refrigeration. It takes just as long to smoke a lot of meat as it does to smoke a little, but with this much meat, it takes some skill to make sure it will all get smoked evenly.</description>
+    <jobString>Smoking meat.</jobString>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>3.75</count>
+      </li>
+    </ingredients>
+    <products>
+      <Tam_SmokedMeat>75</Tam_SmokedMeat>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+	  	<exceptedThingDefs>
+			<li>Tam_SmokedMeat</li>
+		</exceptedThingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+	<skillRequirements>
+		<li>
+			<skill>Cooking</skill>
+			<minLevel>4</minLevel>
+		</li>
+	</skillRequirements>
+  </RecipeDef>
+ 
+ <RecipeDef>
+    <defName>Tam_SmokeMeat40</defName>
+    <label>smoke meat (40)</label>
+    <description>Smoke meat to preserve it. Tasty, but hard to chew. It lasts a long time without refrigeration. It takes just as long to smoke a lot of meat as it does to smoke a little.</description>
+    <jobString>Smoking meat.</jobString>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <Tam_SmokedMeat>40</Tam_SmokedMeat>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+	  	<exceptedThingDefs>
+			<li>Tam_SmokedMeat</li>
+		</exceptedThingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+
+ <RecipeDef>
+    <defName>Tam_SmokeMeat10</defName>
+    <label>smoke meat (10)</label>
+    <description>Smoke meat to preserve it. Tasty, but hard to chew. It lasts a long time without refrigeration. It takes just as long to smoke a lot of meat as it does to smoke a little.</description>
+    <jobString>Smoking meat.</jobString>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>MeatRaw</li>
+          </categories>
+        </filter>
+        <count>0.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <Tam_SmokedMeat>10</Tam_SmokedMeat>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+	  	<exceptedThingDefs>
+			<li>Tam_SmokedMeat</li>
+		</exceptedThingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+      <exceptedThingDefs>
+        <li>Human_Meat</li>
+      </exceptedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+  </RecipeDef>
+  
+  </Defs>

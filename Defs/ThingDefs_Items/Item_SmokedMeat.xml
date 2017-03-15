@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ThingDefs>
+
+  
+  <ThingDef ParentName="OrganicProductBase">
+    <defName>Tam_SmokedMeat</defName>
+    <label>smoked meat</label>
+    <thingClass>ThingWithComps</thingClass>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+	<stackLimit>250</stackLimit>
+    <description>Meat that's been smoked for preservation. Sort of tasty, but hard to chew. It lasts a long time without refrigeration.</description>
+    <graphicData>
+      <texPath>Items/RmxSmokedMeat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>3.1</MarketValue>
+	  <Mass>0.021</Mass>
+      <WorkToMake>3000</WorkToMake>
+    </statBases>
+    <ingestible>
+      <foodType>Meal</foodType>
+      <preferability>RawTasty</preferability>
+      <nutrition>0.075</nutrition>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <tasteThought></tasteThought> <!-- Berries have this tag. I assume it removes the AteRawFood thought out of the OrganicProductBase.-->
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>30</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+      <li Class="CompProperties_Ingredients" />
+      <li Class="CompProperties_FoodPoisonable" />
+    </comps>
+  </ThingDef>
+  
+  </ThingDefs>

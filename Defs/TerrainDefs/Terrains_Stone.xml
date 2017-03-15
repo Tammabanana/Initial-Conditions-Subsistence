@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <TerrainDef Name="FloorBaseStone" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+	  <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+  
+  
+  <TerrainDef ParentName="FloorBaseStone" Name="FloorBaseStoneRough" Abstract="True">
+  	<Description>Rough paving that can be built with very little stone, but it's plain to look at.</Description>
+		<texturePath>Terrain/Surfaces/StoneRough</texturePath>
+    <statBases>
+      <WorkToBuild>200</WorkToBuild>
+    </statBases>
+  </TerrainDef>
+
+ 
+  
+  <TerrainDef ParentName="FloorBaseStone" Name="FloorBaseStoneRandom" Abstract="True">
+		<Description>Carefully-laid stone flooring with a rustic, random pattern of slabs.</Description>
+    <texturePath>Terrain/Surfaces/StoneRandom</texturePath>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+	<researchPrerequisites><li>Stonecutting</li></researchPrerequisites>
+  </TerrainDef>
+  
+
+
+	
+  <!-- Rough stone flooring -->
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="FloorBaseStoneRough">
+		<defName>FloorStoneRoughSandstone</defName>
+		<Label>rough paving (sandstone)</Label>
+    <color>(126,104,94)</color>
+		<RenderPrecedence>267</RenderPrecedence>
+    <CostList>
+      <BlocksSandstone>1</BlocksSandstone>
+    </CostList>
+	</TerrainDef>
+  
+  <TerrainDef ParentName="FloorBaseStoneRough">
+		<defName>FloorStoneRoughGranite</defName>
+		<Label>rough paving (granite)</Label>
+    <color>(105,95,97)</color>
+		<RenderPrecedence>267</RenderPrecedence>
+    <CostList>
+      <BlocksGranite>1</BlocksGranite>
+    </CostList>
+	</TerrainDef>
+  
+  <TerrainDef ParentName="FloorBaseStoneRough">
+		<defName>FloorStoneRoughLimestone</defName>
+		<Label>rough paving (limestone)</Label>
+    <color>(158,153,135)</color>
+		<RenderPrecedence>267</RenderPrecedence>
+    <CostList>
+      <BlocksLimestone>1</BlocksLimestone>
+    </CostList>
+	</TerrainDef>
+  
+  <TerrainDef ParentName="FloorBaseStoneRough">
+		<defName>FloorStoneRoughSlate</defName>
+		<Label>rough paving (slate)</Label>
+    <color>(70,70,70)</color>
+		<RenderPrecedence>267</RenderPrecedence>
+    <CostList>
+      <BlocksSlate>1</BlocksSlate>
+    </CostList>
+	</TerrainDef>
+  
+  <TerrainDef ParentName="FloorBaseStoneRough">
+		<defName>FloorStoneRoughMarble</defName>
+		<Label>rough paving (marble)</Label>
+    <color>(132,135,132)</color>
+		<RenderPrecedence>267</RenderPrecedence>
+    <CostList>
+      <BlocksMarble>1</BlocksMarble>
+    </CostList>
+	</TerrainDef>
+  
+   
+  
+  
+  <!-- Random stone flooring -->
+	<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  
+  <TerrainDef ParentName="FloorBaseStoneRandom">
+		<defName>FloorStoneRandomSandstone</defName>
+		<Label>random paving (sandstone)</Label>
+    <color>(126,104,94)</color>
+		<RenderPrecedence>266</RenderPrecedence>
+    <CostList>
+      <BlocksSandstone>4</BlocksSandstone>
+    </CostList>
+	</TerrainDef>
+  
+  <TerrainDef ParentName="FloorBaseStoneRandom">
+		<defName>FloorStoneRandomGranite</defName>
+		<Label>random paving (granite)</Label>
+    <color>(105,95,97)</color>
+		<RenderPrecedence>266</RenderPrecedence>
+    <CostList>
+      <BlocksGranite>4</BlocksGranite>
+    </CostList>
+	</TerrainDef>
+  
+  <TerrainDef ParentName="FloorBaseStoneRandom">
+		<defName>FloorStoneRandomLimestone</defName>
+		<Label>random paving (limestone)</Label>
+    <color>(158,153,135)</color>
+		<RenderPrecedence>266</RenderPrecedence>
+    <CostList>
+      <BlocksLimestone>4</BlocksLimestone>
+    </CostList>
+	</TerrainDef>
+  
+  <TerrainDef ParentName="FloorBaseStoneRandom">
+		<defName>FloorStoneRandomSlate</defName>
+		<Label>random paving (slate)</Label>
+    <color>(70,70,70)</color>
+		<RenderPrecedence>266</RenderPrecedence>
+    <CostList>
+      <BlocksSlate>4</BlocksSlate>
+    </CostList>
+	</TerrainDef>
+  
+  <TerrainDef ParentName="FloorBaseStoneRandom">
+		<defName>FloorStoneRandomMarble</defName>
+		<Label>random paving (marble)</Label>
+    <color>(132,135,132)</color>
+		<RenderPrecedence>266</RenderPrecedence>
+    <CostList>
+      <BlocksMarble>4</BlocksMarble>
+    </CostList>
+	</TerrainDef>
+  
+  
+  
+
+  
+</TerrainDefs>

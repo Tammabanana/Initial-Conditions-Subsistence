@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+
+	<RecipeDef>
+		<defName>MakeSandstoneBlocksByHand</defName>
+		<label>Whack sandstone chunks into blocks</label>
+		<description>Whack sandstone chunks together into something resembling stone blocks. With the only available tools being pieces of the last rocks you whacked together, this job can take quite a while.</description>
+		<jobString>Whacking sandstone rocks with other rocks.</jobString>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<workAmount>4000</workAmount>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>50</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSandstone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<BlocksSandstone>10</BlocksSandstone>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkSandstone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+  </RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeGraniteBlocksByHand</defName>
+		<label>Whack granite chunks into blocks</label>
+		<description>Whack granite chunks together into something resembling stone blocks. With the only available tools being pieces of the last rocks you whacked together, this job can take quite a while.</description>
+		<jobString>Whacking granite rocks with other rocks.</jobString>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<workAmount>4000</workAmount>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>50</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGranite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<BlocksGranite>10</BlocksGranite>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkGranite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+  </RecipeDef>
+
+	<RecipeDef>
+		<defName>MakeLimestoneBlocksByHand</defName>
+		<label>Whack limestone chunks into blocks</label>
+		<description>Whack limestone chunks together into something resembling stone blocks. With the only available tools being pieces of the last rocks you whacked together, this job can take quite a while.</description>
+		<jobString>Whacking limestone rocks with other rocks.</jobString>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<workAmount>4000</workAmount>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>50</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkLimestone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<BlocksLimestone>10</BlocksLimestone>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkLimestone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+  </RecipeDef>  
+  
+	<RecipeDef>
+		<defName>MakeSlateBlocksByHand</defName>
+		<label>Whack slate chunks into blocks</label>
+		<description>Whack slate chunks together into something resembling stone blocks. With the only available tools being pieces of the last rocks you whacked together, this job can take quite a while.</description>
+		<jobString>Whacking slate rocks with other rocks.</jobString>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<workAmount>4000</workAmount>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>50</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSlate</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<BlocksSlate>10</BlocksSlate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkSlate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+  </RecipeDef>   
+  
+	<RecipeDef>
+		<defName>MakeMarbleBlocksByHand</defName>
+		<label>Whack marble chunks into blocks</label>
+		<description>Whack marble chunks together into something resembling stone blocks. With the only available tools being pieces of the last rocks you whacked together, this job can take quite a while.</description>
+		<jobString>Whacking marble rocks with other rocks.</jobString>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<workAmount>4000</workAmount>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<li>
+				<skill>Crafting</skill>
+				<minLevel>6</minLevel>
+			</li>
+		</skillRequirements>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<targetCountAdjustment>50</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkMarble</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<BlocksMarble>10</BlocksMarble>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkMarble</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+  </RecipeDef>   
+  
+  
+  </RecipeDefs>
