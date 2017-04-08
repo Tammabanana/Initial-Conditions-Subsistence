@@ -20,14 +20,14 @@
 		<defName>FloorWood3</defName>
 		<Label>light wood floor</Label>
 		<RenderPrecedence>248</RenderPrecedence>
-		<Description>Light-coloured wooden floorboards.</Description>
+		<Description>Light-coloured wooden floorboards, sanded and smooth.</Description>
 		<texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
 		<statBases>
-			<WorkToBuild>170</WorkToBuild>
-			<Beauty>3</Beauty>
+			<WorkToBuild>110</WorkToBuild>
+			<Beauty>2</Beauty>
 		</statBases>
 		<CostList>
-			<WoodLog>6</WoodLog>
+			<WoodLog>4</WoodLog>
 		</CostList>
 	</TerrainDef>
 	
@@ -46,4 +46,22 @@
 		</CostList>
 	</TerrainDef>
 
+<!-- Overwrite vanilla wood floor -->	
+
+  
+  <TerrainDef  ParentName="FloorBaseWood">
+    <DefName>WoodPlankFloor</DefName>
+    <label>wood floor</label>
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>Wood plank flooring, sanded, smoothed, and stained, for that warm, homey feeling. Doesn't require any more wood than an unstained floor, but the staining process takes a while.</Description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <statBases>
+      <WorkToBuild>350</WorkToBuild>
+	  <Beauty>3</Beauty>
+    </statBases>
+    <CostList>
+      <WoodLog>4</WoodLog>
+    </CostList>
+  </TerrainDef>	
+	
 </TerrainDefs>

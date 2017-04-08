@@ -9,24 +9,20 @@
 	
 	Features:
 	
-	* Smoked meat; a smokepit for small batches, and a more resource-intensive smokehouse for large batches.
 	* Harvestable dandelions. (Edible, yo.) Greens don't store well, and you'd have to pick a lot to survive on them - but it's an option.
 	* Recipes for making 5x simple/fine meals simultaneously.
-	* Butchering allowed at the crafting spot, albeit more slowly.
-	* Patch different types of leathers together at the crafting spot.
+	* Patch different types of leathers together at the crafting spot or tailoring benches. Patched leather isn't worth as much as whole leather.
 	* Smash chunks to get blocks, albeit much more slowly and for half the yield.
 	* Wild haygrass, with which straw floors and rush bedding can be made.
-	* Rough stone floors that use fewer stone blocks, but have no beauty.
-	* Rough wood floors that use slightly less wood and have no beauty (and actually look rough); overwrite vanilla wood floors to use more wood and have more beauty.
-	* "Worked earth" floors. This provides a smaller fertility boost than some other Tilled Soil variations - better than soil, but not as good as rich soil.
+	* Rough stone floors that use fewer stone blocks, but have no beauty. Some tiled stone floors with beauty to rival the smoothed stone floors.
+	* Rough wood floors that use slightly less wood and have no beauty (and actually look rough); another wood floor that uses slightly more wood and has beauty; overwrite vanilla wood floors to require more work and have more beauty. (Headcanon: the barn floors are slapdash, unsanded, unstained. The light wood floors are made more carefully and involve actually cutting the wood to size and sanding them smooth, but no staining. The vanilla floors are that plus staining, so more work but not more wood.)
 	* Makeable at the crafting spot: desert robes and head wraps for heat waves; fur coats and hats for the winter.
+	* Butchering allowed at a crafting-spot-like butchering spot, albeit more slowly. (COMPATIBILITY NOTE: Nanondalt's "Camping Stuff" also has a butchering spot. Put the mod with the butchering spot you like best lower in the list than the other one. We used the same defname, so in either case you'll only see one butchering spot "building", but we designed them differently. If you load Camping Stuff lower in the list, you'll see both (identical) butchering recipes, but you'll get the bonuses from any tool cabinet links and butchering will be slightly higher priority in the cooking tasks. If you load IC lower, you'll see only one butchering recipe, but no tool cabinet benefits, and priority identical to the butchering table.)
 	
 	Credits for original work (I've made edits to nearly everything):
 	
 	From fairly open mods; see links for original permissions/licenses:	
-	* Smokehouse by Panggul_mas, https://ludeon.com/forums/index.php?topic=20387.0
 	* Stone, wood, and straw floors by Telkir, https://ludeon.com/forums/index.php?topic=4373.0
-	* Tilled Soil by Sam_, https://ludeon.com/forums/index.php?topic=5509.0
 	* Double Sleeping Spot by TrueDestroyer, https://ludeon.com/forums/index.php?topic=26249.0
 	
 	Used with permission:

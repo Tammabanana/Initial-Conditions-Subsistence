@@ -2,11 +2,11 @@
 <RecipeDefs>
 
 	<RecipeDef>
-		<defName>TRMX_ButcherCorpseFlesh</defName>
+		<defName>Tam_ButcherCorpseFlesh</defName>
 		<label>butcher creature</label>
 		<description>Butchers a creature to obtain its meat in usable form.</description>
 		<jobString>Butchering.</jobString>
-		<workAmount>900</workAmount>
+		<workAmount>800</workAmount>
 		<workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>
 		<efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>

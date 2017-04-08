@@ -3,7 +3,7 @@
 
   
     <WorkGiverDef>
-    <defName>DoBillsButcherFleshAtButcheringSpot</defName>
+    <defName>DoBillsButcherFleshSpot</defName>
     <label>butcher creatures</label>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Cooking</workType>
